@@ -12,3 +12,4 @@ RUN elasticsearch-plugin remove x-pack
 RUN rm -rf /usr/share/elasticsearch/config/x-pack
 RUN elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.2.4/elasticsearch-analysis-ik-6.2.4.zip --batch --silent
 RUN elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v6.2.4/elasticsearch-analysis-pinyin-6.2.4.zip --batch --silent
+COPY config/elasticsearch.yml /usr/share/elasticsearch/config/

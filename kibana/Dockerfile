@@ -7,4 +7,6 @@ WORKDIR /usr/share/kibana
 # Add your kibana plugins setup here
 # Example: RUN kibana-plugin install <name|url>
 RUN kibana-plugin remove x-pack
+RUN rm -rf /usr/share/kibana/config/x-pack
+COPY config/kibana.yml /usr/share/kibana/config/
 EXPOSE 5601

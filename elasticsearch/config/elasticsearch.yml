@@ -16,4 +16,4 @@ discovery.zen.minimum_master_nodes: 1
 discovery.type: single-node
 
 # index mapping single type
-index.mapping.single_type: false
+# index.mapping.single_type: false

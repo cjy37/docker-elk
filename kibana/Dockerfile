@@ -1,5 +1,6 @@
 # https://github.com/elastic/kibana-docker
-FROM docker.elastic.co/kibana/kibana:6.2.4
+# FROM docker.elastic.co/kibana/kibana:6.2.4
+FROM docker.elastic.co/kibana/kibana:5.6.10
 
 ENV ELASTIC_CONTAINER true
 ENV PATH=/usr/share/kibana/bin:$PATH
